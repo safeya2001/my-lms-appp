@@ -1,7 +1,22 @@
 .App {
   text-align: center;
+    background-image: url('https://wpdemothemes.com/edusion/wp-content/uploads/2023/10/home2.png');
+}
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+    background-image: url('https://wpdemothemes.com/edusion/wp-content/uploads/2023/10/home2.png');
 }
 
+.app-container {
+  min-height: 100vh;
+  background-image: url('https://wpdemothemes.com/edusion/wp-content/uploads/2023/10/home2.png');
+  background-size: cover;
+  background-position: center center;
+  direction: rtl;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -10,6 +25,7 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+    
   }
 }
 

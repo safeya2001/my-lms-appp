@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 
 
 
+
 import { BookOpen, Award, Users, Search, MessageCircleQuestion, Lightbulb, GraduationCap, Star, Headset, Briefcase, BarChart, Code, DollarSign, Microscope, FlaskConical, Palette, Atom, Smile, FileText, Trophy, Play, CheckCircle, Send, X, Phone, Mail, Clock } from 'lucide-react';
 const API_KEY = ""; 
 const CourseCard = ({ course }) => {
@@ -905,14 +906,15 @@ const App = () => {
     }
   };
 
-  return (
-    <div className="min-h-screen bg-white font-sans text-right">
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
-        body {
-          font-family: 'Cairo', sans-serif;
-        }
-      `}</style>
+
+
+
+return (
+  <div className="App" style={{
+    backgroundImage: "url('https://wpdemothemes.com/edusion/wp-content/uploads/2023/10/home2.png')"
+  }}>
+
+
       <TopHeaderBar />
       <SharedNavbar />
       {renderPage()}
