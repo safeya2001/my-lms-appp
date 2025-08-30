@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 
 
 
+
 import { BookOpen, Award, Users, Search, MessageCircleQuestion, Lightbulb, GraduationCap, Star, Headset, Briefcase, BarChart, Code, DollarSign, Microscope, FlaskConical, Palette, Atom, Smile, FileText, Trophy, Play, CheckCircle, Send, X, Phone, Mail, Clock } from 'lucide-react';
 const API_KEY = ""; 
 const CourseCard = ({ course }) => {
@@ -567,7 +568,7 @@ const HomePage = () => {
                 Start Learning Now
               </span>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mt-4">
-                Unlimited learning opportunities
+               Get smart opportunity for your best future
               </h1>
               <p className="mt-4 text-lg text-gray-600 max-w-xl mx-auto md:mx-0">
                 Explore a wide range of courses and start your journey with the best instructors.
