@@ -1,0 +1,213 @@
+.section-title h3 {
+    text-align: start;
+    color: #0e1948;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.section-title .subtitle-line {
+    font-size: 14px;
+    color: #36dd8c;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 60px;
+}
+
+.section-title .subtitle-line::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2px;
+    width: 40px;
+    background-color: #36dd8c;
+}
+
+.section-title .highlight-text {
+    position: relative;
+    color: #36dd8c;
+}
+
+.section-title .highlight-text::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #36dd8c;
+}
+
+
+
+
+
+
+
+
+
+
+
+.popular-courses-section {
+    padding: 100px 0;
+    background-color: #fff !important;
+}
+
+.section-title {
+    text-align: start;
+    margin-bottom: 0px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #0e1948;
+    line-height: 1.2;
+}
+
+
+.highlight-text-underline {
+    position: relative;
+    color: #36dd8c;
+}
+
+.highlight-text-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #36dd8c;
+}
+
+/* تنسيق بطاقة الدورة */
+.course-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.06);
+    border: 1px solid #ededed;
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.course-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.course-img {
+    position: relative;
+    width: 40%;
+    flex-shrink: 0;
+}
+
+.course-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.price-tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #36dd8c;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.course-content {
+    padding: 20px;
+}
+
+.course-content .category-btn {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #0e1948;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.course-content h3 a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a2d62;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.course-content h3 a:hover {
+    color: #36dd8c;
+}
+
+.course-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.course-details span {
+    font-size: 14px;
+    color: #888;
+}
+
+.course-details span i {
+    margin-right: 5px;
+    color: #36dd8c;
+}
+
+/* تنسيق زر "View All Course" */
+.btn_one {
+    display: inline-block;
+    background-color: #36dd8c;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+}
+
+.btn_one:hover {
+    background-color: #27c683;
+}
+
+/* التنسيق للشبكة والأعمدة */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-lg-6 {
+    padding: 0 15px;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+@media (max-width: 991px) {
+    .col-lg-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+

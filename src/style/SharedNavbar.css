@@ -1,0 +1,238 @@
+/* Main Nav Container */
+.shared-navbar {
+  /*
+    * هذه الخاصية تجعل شريط التنقل يلتصق أسفل الشريط الأول
+    * top: 54px; هي المسافة التي يلتصق بها (طول الشريط العلوي)
+    * z-index: 1000; قيمة أقل من الشريط الأول
+  */
+  position: sticky;
+  top: 54px;
+  z-index: 1000;
+}
+
+/* 🔹 Top Green Bar */
+.top-bar {
+  align-items: center;
+  background-color: #2eca7f;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  line-height: 46px;
+}
+
+.top-bar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* العناصر */
+.top-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-item a {
+  color: white;
+  text-decoration: none;
+}
+
+/* أيقونات السوشال ميديا */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  background-color: #fff;
+  color: black;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #fff;
+  color: black;
+  transform: scale(1.1);
+}
+
+/* Main Navbar Section */
+.main-navbar {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.main-navbar-container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4a5568;
+}
+
+/* Desktop Navigation */
+.desktop-nav {
+  display: none;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .desktop-nav {
+    display: flex;
+  }
+}
+
+.nav-list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #4a5568;
+  font-weight: 500;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #4f46e5;
+}
+
+/* Call to Action Buttons */
+.cta-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.cta-btn {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 9999px;
+  transition: background-color 0.2s;
+  text-decoration: none;
+}
+
+.contact-btn {
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+.contact-btn:hover {
+  background-color: #059669;
+}
+
+.account-btn {
+  border: 1px solid #d1d5db;
+  color: #4a5568;
+}
+
+.account-btn:hover {
+  background-color: #f3f4f6;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn-container {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu-btn-container {
+    display: none;
+  }
+}
+
+.mobile-menu-btn {
+  color: #4a5568;
+  transition: color 0.2s;
+}
+
+.mobile-menu-btn:hover {
+  color: #4f46e5;
+}
+
+/* Mobile Menu */
+.mobile-menu-open {
+  display: block;
+}
+
+.mobile-menu {
+  background-color: #ffffff;
+  padding-bottom: 1rem;
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  list-style: none;
+  margin: 0;
+}
+
+.mobile-nav-link {
+  color: #4a5568;
+  font-weight: 500;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.mobile-nav-link:hover {
+  color: #4f46e5;
+}
+
+.mobile-cta-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.mobile-cta-btn {
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  transition: background-color 0.2s;
+  text-decoration: none;
+}

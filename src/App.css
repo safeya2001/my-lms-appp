@@ -1,7 +1,13 @@
 .App {
-  text-align: center;
-    background-image: url('https://wpdemothemes.com/edusion/wp-content/uploads/2023/10/home2.png');
+  min-height: 100vh; /* يغطي طول الشاشة */
+  background-image: url("https://www.bing.com/images/search?view=detailV2&ccid=nmY2o1Md&id=D0B696F792779C67DDDDBFFC09DB66542EBAA0A0&thid=OIP.nmY2o1MdUEMRBhFkRVxkyAHaGF&mediaurl=https%3a%2f%2fwww.tandemconstruction.com%2fsites%2fdefault%2ffiles%2fstyles%2fproject_slider_main%2fpublic%2fimages%2fproject-images%2fIMG-Fieldhouse-10.jpg%3fitok%3dWhi8hHo9&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.9e6636a3531d504311061164455c64c8%3frik%3doKC6LlRm2wn8vw%26pid%3dImgRaw%26r%3d0&exph=1970&expw=2400&q=IMG&FORM=IRPRST&ck=DE8864D531B58C16309410723EC75F12&selectedIndex=0&itb=0");
+  background-size: cover; /* تغطي الشاشة بالكامل */
+  background-position: center; /* توسيط الصورة */
+  background-repeat: no-repeat; /* منع التكرار */
+  display: flex;
+  flex-direction: column;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
 
 body {
@@ -10,13 +16,8 @@ body {
     background-image: url('https://wpdemothemes.com/edusion/wp-content/uploads/2023/10/home2.png');
 }
 
-.app-container {
-  min-height: 100vh;
-  background-image: url('https://wpdemothemes.com/edusion/wp-content/uploads/2023/10/home2.png');
-  background-size: cover;
-  background-position: center center;
-  direction: rtl;
-}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

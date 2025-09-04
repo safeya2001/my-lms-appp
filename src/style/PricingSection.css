@@ -1,0 +1,158 @@
+/* Styling for the entire section */
+.pricing-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+/* Section Title Styles */
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-family: 'Mulish', sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  color: #1a2d62;
+  margin: 0;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+.section-title p {
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #2eca7f;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.section-title p span {
+  color: #1a2d62;
+}
+
+/* Flexbox to arrange cards side-by-side */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.col-lg-4 {
+  padding-left: 15px;
+  padding-right: 15px;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+@media (max-width: 992px) {
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-lg-4, .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+/* Pricing Card Styles */
+.pricing_design {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pricing_design:hover {
+  transform: translateY(-10px);
+}
+
+.price-head {
+  background-color: #f7f9fc;
+  text-align: center;
+  padding: 30px;
+}
+
+.price-head h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a2d62;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.price-head h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #2eca7f;
+  margin: 10px 0 0;
+}
+
+.price-head span {
+  font-size: 16px;
+  color: #888;
+}
+
+.price-head .upgrade_price {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.single-pricing ul {
+  list-style: none;
+  padding: 30px;
+  margin: 0;
+}
+
+.single-pricing ul li {
+  margin-bottom: 15px;
+  color: #555;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.single-pricing ul li span {
+  margin-right: 10px;
+  color: #2eca7f;
+}
+
+/* Color change for the button */
+.price_btn {
+  display: block;
+  text-align: center;
+  padding: 15px 25px;
+  background-color: #2eca7f;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0 0 15px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.price_btn:hover {
+  background-color: #1a2d62;
+}
+
+.price_btn::after {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>');
+  margin-left: 8px;
+  vertical-align: middle;
+}

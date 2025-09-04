@@ -1,0 +1,191 @@
+/* General section styling */
+.blog-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.section-title h2 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    color: #1a2d62;
+    margin: 0;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+
+.section-title p {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #2eca7f;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.section-title span {
+    color: #1a2d62;
+}
+
+/* Main container for the three columns */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col-lg-4, .col-lg-6 {
+    position: relative;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .col-lg-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Vertical column for text-only blogs */
+.blog-column-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+/* Single blog card styling */
+.single_blog {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    height: 100%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.single_blog:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific styles for cards with images */
+.single_blog.with-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Specific styles for cards without images */
+.single_blog.without-image {
+    flex-grow: 1; /* لجعلها تملأ المساحة المتاحة في العمود */
+    border: 1px solid #e0e0e0;
+}
+
+.single_blog .content_box {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.single_blog .content_box span {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.single_blog .content_box span a {
+    color: #2eca7f;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.single_blog .content_box h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a2d62;
+    margin: 0 0 15px;
+    line-height: 1.4;
+}
+
+.single_blog .content_box h2 a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.single_blog .content_box h2 a:hover {
+    color: #2eca7f;
+}
+
+.single_blog .cta {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #1a2d62;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    margin-top: auto;
+}
+
+.single_blog .cta:hover {
+    color: #2eca7f;
+}
+
+.single_blog .cta svg {
+    margin-left: 8px;
+    width: 13px;
+    height: 10px;
+    stroke: #1a2d62;
+    transition: stroke 0.3s ease;
+}
+
+.single_blog .cta:hover svg {
+    stroke: #2eca7f;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 992px) {
+    .blog-grid-container {
+        flex-direction: column;
+        gap: 0;
+    }
+}

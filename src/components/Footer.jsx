@@ -1,70 +1,108 @@
 import React from 'react';
+import '../style/Footer.css';
 
-const Footer = ({ setCurrentPage }) => (
-  <footer className="bg-gray-800 text-white p-6 sm:p-12 mt-12">
-    <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-      <div>
-        https://wpdemothemes.com/edusion/wp-content/themes/edusion/assets/images/all-img/logo.png
-        <p className="text-sm text-gray-400 mt-2">
-        
-        </p>
-      </div>
+const Footer = () => {
+  return (
+    <div className="footer section-padding">
+      <div className="container">
+        <div className="row">
+          {/* About Widget Column */}
+          <div className="col-lg-4 col-md-6 col-xs-12">
+            <div className="single_footer about_widget">
+              <a href="#">
+                <img src="https://wpdemothemes.com/edusion/wp-content/uploads/2023/11/logo3.png" alt="Home 2" />
+              </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis dignissim.</p>
+              <div className="foot_social">
+                <span>Connect with: </span>
+                <ul>
+                  <li><a href="#"><i className="ti-instagram"></i></a></li>
+                  <li><a href="#"><i className="ti-facebook"></i></a></li>
+                  <li><a href="#"><i className="ti-youtube"></i></a></li>
+                  <li><a href="#"><i className="ti-pinterest"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-      <div>
-        <h4 className="text-lg font-semibold mb-4"></h4>
-        <ul className="space-y-2">
-          <li>
-            <a href="#" onClick={() => setCurrentPage('home')} className="text-gray-400 hover:text-white">
-        
-            </a>
-          </li>
-          <li>
-            <a href="#" onClick={() => setCurrentPage('about')} className="text-gray-400 hover:text-white">
-              عنّا
-            </a>
-          </li>
-          <li>
-            <a href="#" onClick={() => setCurrentPage('courses')} className="text-gray-400 hover:text-white">
-              الدورات
-            </a>
-          </li>
-          <li>
-            <a href="#" onClick={() => setCurrentPage('contact')} className="text-gray-400 hover:text-white">
-              الاتصال
-            </a>
-          </li>
-        </ul>
-      </div>
+          {/* Links and Contact Info Columns */}
+          <div className="col-lg-8 col-md-12 col-xs-12">
+            <div className="row">
+              {/* Courses Menu */}
+              <div className="col-lg-4 col-md-4 col-sm-6 col-12">
+                <div className="single_footer">
+                  <h4>Courses</h4>
+                  <ul className="menu">
+                    <li><a href="#">Creative Writing</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">SEO Business</a></li>
+                    <li><a href="#">Social Marketing</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Website Development</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+              {/* Company Menu */}
+              <div className="col-lg-4 col-md-4 col-sm-6 col-12">
+                <div className="single_footer">
+                  <h4>Company</h4>
+                  <ul className="menu">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Knowledge Base</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Market API</a></li>
+                    <li><a href="#">Support Team</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+              {/* Contact Info */}
+              <div className="col-lg-4 col-md-4 col-sm-6 col-12">
+                <div className="single_footer">
+                  <h4>Contact Info</h4>
+                  <div className="sf_contact">
+                    <span className="ti-mobile"></span>
+                    <h3>Phone Number</h3>
+                    <p>+88 457 845 695</p>
+                  </div>
+                  <div className="sf_contact">
+                    <span className="ti-email"></span>
+                    <h3>Email Address</h3>
+                    <p>example#yourmail.com</p>
+                  </div>
+                  <div className="sf_contact">
+                    <span className="ti-map"></span>
+                    <h3>Location</h3>
+                    <p>California, USA</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div>
-        <h4 className="text-lg font-semibold mb-4">الدعم</h4>
-        <ul className="space-y-2">
-          <li>
-            <a href="#" className="text-gray-400 hover:text-white">الأسئلة الشائعة</a>
-          </li>
-          <li>
-            <a href="#" className="text-gray-400 hover:text-white">سياسة الخصوصية</a>
-          </li>
-          <li>
-            <a href="#" className="text-gray-400 hover:text-white">شروط الاستخدام</a>
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 className="text-lg font-semibold mb-4">تابعنا</h4>
-        <div className="flex space-x-4">
-          <a href="#" className="text-gray-400 hover:text-white">فيسبوك</a>
-          <a href="#" className="text-gray-400 hover:text-white">تويتر</a>
-          <a href="#" className="text-gray-400 hover:text-white">لينكدإن</a>
+        {/* Footer Bottom (Copyright and Menu) */}
+        <div className="row footer-btm">
+          <div className="col-lg-6 col-sm-6 col-xs-12">
+            <div className="footer_copyright">
+              <p>© 2025 Edusion. All Rights Reserved</p>
+            </div>
+          </div>
+          <div className="col-lg-6 col-sm-6 col-xs-12">
+            <div className="footer_menu">
+              <ul className="menu">
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Special</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <div className="mt-8 text-center text-sm text-gray-400">
-      &copy; 2024 Edusion. جميع الحقوق محفوظة.
-    </div>
-  </footer>
-);
+  );
+};
 
 export default Footer;

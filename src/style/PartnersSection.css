@@ -1,0 +1,44 @@
+.partners-section {
+  padding: 80px 0; /* يمكنك تعديل المسافة العلوية والسفلية حسب الحاجة */
+}
+
+.partner_title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.partner_title h3 {
+  line-height: 1.2;
+  letter-spacing: 0px;
+  font-family: 'Mulish', sans-serif;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-weight: 700;
+  background: rgba(46, 202, 127, 0.1);
+  padding: 10px;
+  border-radius: 30px;
+  width: 60%;
+  margin: auto;
+  color: #2eca7f;
+}
+
+.partners-carousel {
+  display: flex; /* يجعل العناصر في صف واحد */
+  justify-content: center; /* يوزع العناصر بالتساوي في المنتصف */
+  align-items: center;
+  gap: 20px; /* المسافة بين كل أيقونة وأخرى */
+  flex-wrap: wrap;
+}
+
+.partner-item img {
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.partner-item img:hover {
+  filter: none;
+  opacity: 1;
+}

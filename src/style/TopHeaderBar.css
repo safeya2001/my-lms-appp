@@ -1,0 +1,59 @@
+/* Main header container */
+.top-header-bar {
+  /*
+    * هذه الخاصية تجعل الشريط يلتصق في أعلى الصفحة
+    * z-index: 1001; تُعطيه قيمة أعلى من الشريط الثاني
+    * لكي يظهر فوقه في حال التداخل
+  */
+  position: sticky;
+  top: 0;
+  z-index: 1001; 
+  background-color: #262626;
+  /* باقي الأنماط كما هي */
+  height: 54px;
+}
+
+/* Inner container for content */
+.top-header-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+/* Section for the Envato logo */
+.envato-section {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+/* Styling for the logo image */
+.envato-logo {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  text-indent: -9999px;
+  height: 18px;
+  width: 152px;
+  background-size: 152px 18px;
+}
+
+/* Styling for the "Buy Now" button */
+.buy-now-btn {
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  line-height: 1.5;
+  column-gap: 0.5rem;
+  background-color: #8bc34a;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition-property: background-color;
+  transition-duration: 200ms;
+}
+
+/* Hover effect for the button */
+.buy-now-btn:hover {
+  background-color: rgba(139, 195, 74, 0.9);
+}

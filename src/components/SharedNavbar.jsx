@@ -1,5 +1,7 @@
-
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import AboutPage from '../AboutPage'
+// تأكد من وجود هذا الاستيراد إذا كنت تستخدم react-router-dom
+ import { Link } from "react-router-dom"; 
 import {
   Phone,
   Mail,
@@ -7,105 +9,96 @@ import {
   Facebook,
   Twitter,
   Youtube,
-  Share2, // بديل لـ Pinterest
-} from 'lucide-react';
+  AlignCenter,
+} from "lucide-react";
+import "../style/SharedNavbar.css";
 
 const SharedNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: 'Home', href: '/' },
-    { name: 'Pages', href: '/', hasDropdown: true },
-    { name: 'Courses', href: '/courses', hasDropdown: true },
-    { name: 'Blog', href: '#blog', hasDropdown: true },
-    { name: 'Contact', href: '/contact' },
+    { name: "Home", href: "/" },
+ { name: "Pages", href: "/about", hasDropdown: true },
+    { name: "Courses", href: "/courses", hasDropdown: true },
+    { name: "Blog", href: "#blog", hasDropdown: true },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
-    <nav className="sticky top-0 z-50">
-      {/* Top Green Bar */}
-      <div className="bg-[#4caf50] text-white py-2 px-4 text-sm">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          {/* Contact Info */}
-          <div className="flex flex-wrap justify-center md:justify-start items-center gap-6">
-            <div className="flex items-center gap-2">
-              <Phone size={16} />
-              <span>(+354) 6800 37849</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Mail size={16} />
-              <span>hello@edusion.com</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Clock size={16} />
-              <span>Mon to Sat Open: 9am - 6pm</span>
-            </div>
+    <nav className="shared-navbar">
+      {/* 🔹 Top Green Bar */}
+      <div className="top-bar">
+        <div className="top-bar-container">
+          {/* Phone */}
+          <div className="top-item">
+            <Phone className="top-icon" />
+            <span>+(354) 6800 37849</span>
           </div>
 
-          {/* Social Media Icons */}
-          <div className="flex gap-3">
-            <a href="#" className="hover:opacity-80 transition">
+          {/* Email */}
+          <div className="top-item">
+            <Mail className="top-icon" />
+            <a href="mailto:hello@edusion.com">hello@edusion.com</a>
+          </div>
+
+          {/* Working Hours */}
+          <div className="top-item">
+            <Clock className="top-icon" />
+            <span>Mon to Sat Open: 9am - 6pm</span>
+          </div>
+
+          {/* Social Icons */}
+          <div className="social-icons">
+            <a href="#" className="social-icon">
               <Twitter size={16} />
             </a>
-            <a href="#" className="hover:opacity-80 transition">
+            <a href="#" className="social-icon">
               <Facebook size={16} />
             </a>
-            <a href="#" className="hover:opacity-80 transition">
+            <a href="#" className="social-icon">
               <Youtube size={16} />
-            </a>
-            <a href="#" className="hover:opacity-80 transition">
-              <Share2 size={16} />
             </a>
           </div>
         </div>
       </div>
 
-   {/* Main Navbar */}
-      <div className="bg-white shadow-md">
-        <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+      {/* 🔹 Main Navbar */}
+      <div className="main-navbar">
+        <div className="main-navbar-container">
           {/* Logo */}
-          <a href="https://wpdemothemes.com/edusion/wp-content/themes/edusion/assets/images/all-img/logo.png" className="flex items-center gap-2">
-           
-            <span className="text-2xl font-bold text-gray-800 font-inter">
-              Edusion
-            </span>
+          <a
+            href="/"
+            className="logo-link"
+          >
+            <span className="logo-text">Edusion</span>
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-6">
-            <ul className="flex gap-6">
+          <div className="desktop-nav">
+            <ul className="nav-list">
               {navItems.map((item) => (
                 <li key={item.name}>
-                  <a
-                    href={item.href}
-                    className="text-gray-600 hover:text-indigo-600 font-medium transition"
-                  >
+                  <a href={item.href} className="nav-link">
                     {item.name}
                   </a>
                 </li>
               ))}
             </ul>
-            <div className="flex gap-3">
-              <a
-                href="/contact"
-                className="px-5 py-2 bg-emerald-500 text-white rounded-full hover:bg-emerald-600 transition"
-              >
+            <div className="cta-buttons">
+              <a href="/contact" className="cta-btn contact-btn">
                 Contact
               </a>
-              <a
-                href="/account"
-                className="px-5 py-2 border border-gray-300 text-gray-700 rounded-full hover:bg-gray-100 transition"
-              >
+              <a href="/account" className="cta-btn account-btn">
                 Account
               </a>
             </div>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="mobile-menu-btn-container">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-600 hover:text-indigo-600"
+              className="mobile-menu-btn"
             >
               <svg
                 className="w-8 h-8"
@@ -135,30 +128,21 @@ const SharedNavbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden bg-white pb-4 shadow-inner rounded-b-lg">
-            <ul className="flex flex-col items-center gap-4 pt-4">
+          <div className="mobile-menu">
+            <ul className="mobile-nav-list">
               {navItems.map((item) => (
                 <li key={item.name}>
-                  <a
-                    href={item.href}
-                    className="text-gray-700 hover:text-indigo-600 font-medium transition"
-                  >
+                  <a href={item.href} className="mobile-nav-link">
                     {item.name}
                   </a>
                 </li>
               ))}
             </ul>
-            <div className="flex flex-col items-center gap-3 mt-5 px-4">
-              <a
-                href="/contact"
-                className="w-full text-center px-5 py-2 bg-emerald-500 text-white rounded-full hover:bg-emerald-600 transition"
-              >
+            <div className="mobile-cta-buttons">
+              <a href="/contact" className="mobile-cta-btn contact-btn">
                 Contact
               </a>
-              <a
-                href="/account"
-                className="w-full text-center px-5 py-2 border border-gray-300 text-gray-700 rounded-full hover:bg-gray-100 transition"
-              >
+              <a href="/account" className="mobile-cta-btn account-btn">
                 Account
               </a>
             </div>

@@ -62,7 +62,7 @@ const SharedFooter = () => {
           </ul>
         </div>
 
-        {/* Contact Info */}
+{/* Contact Info */}
         <div>
           <h3 className="text-xl font-bold text-white mb-4 font-inter">Contact Info</h3>
           <ul className="space-y-2 text-sm">

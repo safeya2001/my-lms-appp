@@ -1,0 +1,120 @@
+.topic_content_area {
+    background-color: #f9f9f9; /* الخلفية العامة للقسم */
+}
+
+.topic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.single_tca {
+    display: flex; /* لتنظيم الأيقونة والنص بجانب بعضهما */
+    align-items: center; /* لمحاذاتهما عمودياً في المنتصف */
+    padding: 30px;
+    background-color: #fff; /* الخلفية البيضاء للبطاقة */
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.06);
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.single_tca:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.single_tca img {
+    max-width: 50px;
+    margin-right: 20px;
+}
+
+.single_tca h2 a {
+    font-size: 24px;
+    color: #1a2d62;
+    text-decoration: none;
+    font-weight: 700;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.single_tca h2 a:hover {
+    color: #36dd8c;
+}
+
+.single_tca span {
+    color: #36dd8c;
+    font-size: 16px;
+}
+
+/* تنسيق العنوان الرئيسي */
+.section-title h3 {
+    text-align: start;
+    color: #0e1948;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.section-title .subtitle-line {
+    font-size: 14px;
+    color: #36dd8c;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 60px;
+}
+
+.section-title .subtitle-line::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2px;
+    width: 40px;
+    background-color: #36dd8c;
+}
+
+.section-title .highlight-text {
+    position: relative;
+    color: #36dd8c;
+}
+
+.section-title .highlight-text::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #36dd8c;
+}
+
+/* للتأكد من أنها تظهر بشكل صحيح على الشاشات الأصغر */
+@media (max-width: 992px) {
+    .topic-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .topic-grid {
+        grid-template-columns: 1fr;
+    }
+    .single_tca {
+        flex-direction: column;
+        text-align: center;
+    }
+    .single_tca img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
