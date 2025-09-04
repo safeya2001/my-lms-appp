@@ -4,19 +4,21 @@
 }
 
 .section-title {
-    text-align: center;
+    text-align: start;
     margin-bottom: 50px;
 }
 
 .section-title h2 {
+.section-title h2 {
     font-size: 14px;
     font-weight: 700;
-    color: #888;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 10px 0;
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin: 0;
-    padding-bottom: 10px;
-    position: relative;
+    color: #2eca7f;
+}
 }
 
 .section-title h2::after {
