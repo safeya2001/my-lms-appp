@@ -10,7 +10,7 @@ const TeamMembers = () => {
       </div>
       <div className="team-container">
         
-        {/* Team Member 1 */}
+        {}
         <div className="our-team">
           <div className="team_img">
             <img src="https://wpdemothemes.com/edusion/wp-content/uploads/2023/11/team2.jpg" alt="Daniel Miller" />
@@ -30,7 +30,7 @@ const TeamMembers = () => {
           </div>
         </div>
         
-        {/* Team Member 2 */}
+        {}
         <div className="our-team">
           <div className="team_img">
             <img src="https://wpdemothemes.com/edusion/wp-content/uploads/2023/11/team1.jpg" alt="Masum Billah" />
@@ -50,7 +50,7 @@ const TeamMembers = () => {
           </div>
         </div>
         
-        {/* Team Member 3 */}
+        {}
         <div className="our-team">
           <div className="team_img">
             <img src="https://wpdemothemes.com/edusion/wp-content/uploads/2023/11/pexels-vladimir-kudin-10141145.jpg" alt="Kenneth Renteria" />

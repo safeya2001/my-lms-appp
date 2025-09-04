@@ -9,7 +9,7 @@
 }
 
 .section-title h2 {
-.section-title h2 {
+
     font-size: 14px;
     font-weight: 700;
     padding: 0;
@@ -18,7 +18,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #2eca7f;
-}
+
 }
 
 .section-title h2::after {
@@ -110,4 +110,16 @@
         flex: 0 0 50%;
         max-width: 50%;
     }
+}
+.faq-title {
+  font-size: var(--main-h2-font-size);
+  margin: var(--main-h2-margin);
+  font-weight: var(--main-h2-font-weight);
+  color: #1a2d62;
+}
+
+.team-title {
+  font-size: var(--main-h2-font-size);
+  font-weight: var(--main-h2-font-weight);
+  color: #54595F;
 }

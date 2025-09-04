@@ -7,17 +7,17 @@
 
 .cp_content h4 {
   font-size: 1.25rem;
-  color: #2eca7f; /* اللون الأخضر */
+  color: #2eca7f; 
 }
 
 .cp_content h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #333; /* يمكنك تعديل اللون */
+  color: #333; 
 }
 
 .cp_content h2 span {
-  color: #2eca7f; /* اللون الأخضر للكلمة المميزة */
+  color: #2eca7f; 
 }
 
 .cp_content p {
@@ -39,7 +39,7 @@
 
 .cp_content ul li .ti-check {
   margin-right: 10px;
-  color: #2eca7f; /* لون أيقونة الصح */
+  color: #2eca7f; 
 }
 
 .cp_img img {
@@ -53,7 +53,7 @@
   gap: 10px;
   padding: 10px 25px;
   border-radius: 5px;
-  background-color: #2eca7f; /* لون الزر */
+  background-color: #2eca7f;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -61,5 +61,5 @@
 }
 
 .cp_btn .cta:hover {
-  background-color: #219653; /* لون مختلف عند التحويم */
+  background-color: #219653; 
 }

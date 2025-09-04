@@ -1,5 +1,5 @@
 .topic_content_area {
-    background-color: #f9f9f9; /* الخلفية العامة للقسم */
+    background-color: #f9f9f9; 
 }
 
 .topic-grid {
@@ -9,10 +9,10 @@
 }
 
 .single_tca {
-    display: flex; /* لتنظيم الأيقونة والنص بجانب بعضهما */
-    align-items: center; /* لمحاذاتهما عمودياً في المنتصف */
+    display: flex;
+    align-items: center;
     padding: 30px;
-    background-color: #fff; /* الخلفية البيضاء للبطاقة */
+    background-color: #fff; 
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.06);
     border: 1px solid #ededed;
     border-radius: 5px;
@@ -48,47 +48,25 @@
     color: #36dd8c;
     font-size: 16px;
 }
-
-/* تنسيق العنوان الرئيسي */
-.section-title h3 {
-    text-align: start;
-    color: #0e1948;
-    font-size: 48px;
+.section-title h2 {
+    font-size: 40px;
     font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 20px;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    color: #0e1948;
+    text-align: center;
 }
 
-.section-title .subtitle-line {
-    font-size: 14px;
-    color: #36dd8c;
-    font-weight: 600;
-    text-transform: uppercase;
-    display: block;
-    margin-bottom: 10px;
-    position: relative;
-    padding-left: 60px;
+.section-title p {
+    text-align: center;
+    color: #888;
+    margin-bottom: 50px;
 }
 
-.section-title .subtitle-line::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 2px;
-    width: 40px;
-    background-color: #36dd8c;
-}
-
-.section-title .highlight-text {
+.highlight-text-underline {
     position: relative;
     color: #36dd8c;
 }
 
-.section-title .highlight-text::after {
+.highlight-text-underline::after {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -97,8 +75,6 @@
     height: 2px;
     background-color: #36dd8c;
 }
-
-/* للتأكد من أنها تظهر بشكل صحيح على الشاشات الأصغر */
 @media (max-width: 992px) {
     .topic-grid {
         grid-template-columns: repeat(2, 1fr);

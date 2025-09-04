@@ -1,11 +1,11 @@
-/* Styling for the entire section */
+
 .pricing-section {
   padding: 80px 0;
   background-color: #f8f9fa;
   text-align: center;
 }
 
-/* Section Title Styles */
+
 .section-title {
   text-align: center;
   margin-bottom: 50px;
@@ -35,7 +35,7 @@
   color: #1a2d62;
 }
 
-/* Flexbox to arrange cards side-by-side */
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -69,7 +69,7 @@
   margin-bottom: 1.5rem !important;
 }
 
-/* Pricing Card Styles */
+
 .pricing_design {
   border-radius: 15px;
   overflow: hidden;
@@ -134,7 +134,7 @@
   color: #2eca7f;
 }
 
-/* Color change for the button */
+
 .price_btn {
   display: block;
   text-align: center;
@@ -155,4 +155,16 @@
   content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>');
   margin-left: 8px;
   vertical-align: middle;
+}
+.faq-title {
+  font-size: var(--main-h2-font-size);
+  margin: var(--main-h2-margin);
+  font-weight: var(--main-h2-font-weight);
+  color: #1a2d62;
+}
+
+.team-title {
+  font-size: var(--main-h2-font-size);
+  font-weight: var(--main-h2-font-weight);
+  color: #54595F;
 }

@@ -9,7 +9,7 @@ const CourseCategories = () => {
                     <div className="col-lg-12 text-center">
                         <div className="section-title">
                             <h3>
-                                <span className="subtitle-line">START LEARNING </span>
+                                <h2>START LEARNING </h2>
                                 Popular <span className="highlight-text">Topics To Learn</span> From Today.
                             </h3>
                           
@@ -17,7 +17,7 @@ const CourseCategories = () => {
                     </div>
                 </div>
                 <div className="topic-grid">
-                    {/* Category 1 */}
+                    {}
                     <div className="single_tca">
                         <img src="https://wpdemothemes.com/edusion/wp-content/uploads/2023/10/ct5.svg" alt="Business" />
                         <div className="text-content">
@@ -28,7 +28,7 @@ const CourseCategories = () => {
                         </div>
                     </div>
 
-                    {/* Category 2 */}
+                    {}
                     <div className="single_tca">
                         <img src="https://wpdemothemes.com/edusion/wp-content/uploads/2023/10/ct6.svg" alt="Data Science" />
                         <div className="text-content">
@@ -39,7 +39,7 @@ const CourseCategories = () => {
                         </div>
                     </div>
 
-                    {/* Category 3 */}
+                    {}
                     <div className="single_tca">
                         <img src="https://wpdemothemes.com/edusion/wp-content/uploads/2023/10/ct2.svg" alt="Digital Program" />
                         <div className="text-content">
@@ -50,7 +50,7 @@ const CourseCategories = () => {
                         </div>
                     </div>
 
-                    {/* Category 4 */}
+                    {}
                     <div className="single_tca">
                         <img src="https://wpdemothemes.com/edusion/wp-content/uploads/2023/10/ct3.svg" alt="Finance" />
                         <div className="text-content">
@@ -61,7 +61,7 @@ const CourseCategories = () => {
                         </div>
                     </div>
                     
-                    {/* Category 5 */}
+                    {}
                     <div className="single_tca">
                         <img src="https://wpdemothemes.com/edusion/wp-content/uploads/2023/10/ct4.svg" alt="Modern Physics" />
                         <div className="text-content">
@@ -72,7 +72,7 @@ const CourseCategories = () => {
                         </div>
                     </div>
                     
-                    {/* Category 6 */}
+                    {}
                     <div className="single_tca">
                         <img src="https://wpdemothemes.com/edusion/wp-content/uploads/2023/10/ct1.svg" alt="UI/UX Design" />
                         <div className="text-content">

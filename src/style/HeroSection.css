@@ -21,13 +21,13 @@
   
 
    
-    color: #0e1948; /* لون النص الأساسي */
+    color: #0e1948; 
     margin: 20px;
     font-weight: 700;
 }
 
 .home_content h1 span {
-    color: #36dd8c; /* لون كلمة 'opportunity' */
+    color: #36dd8c;
 }
 
 
@@ -39,7 +39,7 @@
     font-size: 18px;
 }
 
-/* الأنماط الجديدة لشريط البحث */
+
 .search-section {
     display: flex;
     flex-direction: column;
@@ -83,7 +83,7 @@
     transition: 0.3s ease;
 }
 
-/* الأنماط الجديدة للكلمات الشائعة */
+
 .popular-topics {
     margin-top: 10px;
     font-size: 15px;
@@ -105,4 +105,16 @@
 
 .popular-topics .comma {
     color: #aaa;
+}
+.faq-title {
+  font-size: var(--main-h2-font-size);
+  margin: var(--main-h2-margin);
+  font-weight: var(--main-h2-font-weight);
+  color: #1a2d62;
+}
+
+.team-title {
+  font-size: var(--main-h2-font-size);
+  font-weight: var(--main-h2-font-weight);
+  color: #54595F;
 }

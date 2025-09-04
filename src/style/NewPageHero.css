@@ -79,3 +79,15 @@
     font-size: 32px;
   }
 }
+.faq-title {
+  font-size: var(--main-h2-font-size);
+  margin: var(--main-h2-margin);
+  font-weight: var(--main-h2-font-weight);
+  color: #1a2d62;
+}
+
+.team-title {
+  font-size: var(--main-h2-font-size);
+  font-weight: var(--main-h2-font-weight);
+  color: #54595F;
+}

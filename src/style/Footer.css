@@ -1,4 +1,4 @@
-/* General footer styling */
+
 .footer.section-padding {
   padding: 80px 0;
   background-color: #1a2d62;
@@ -6,7 +6,7 @@
   font-family: 'Mulish', sans-serif;
 }
 
-/* Flexbox for rows and columns */
+
 .row {
   display: flex;
   flex-wrap: wrap;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AboutPage from '../AboutPage'
-// تأكد من وجود هذا الاستيراد إذا كنت تستخدم react-router-dom
+
  import { Link } from "react-router-dom"; 
 import {
   Phone,
@@ -26,28 +26,28 @@ const SharedNavbar = () => {
 
   return (
     <nav className="shared-navbar">
-      {/* 🔹 Top Green Bar */}
+      {}
       <div className="top-bar">
         <div className="top-bar-container">
-          {/* Phone */}
+          {}
           <div className="top-item">
             <Phone className="top-icon" />
             <span>+(354) 6800 37849</span>
           </div>
 
-          {/* Email */}
+          {}
           <div className="top-item">
             <Mail className="top-icon" />
             <a href="mailto:hello@edusion.com">hello@edusion.com</a>
           </div>
 
-          {/* Working Hours */}
+          {}
           <div className="top-item">
             <Clock className="top-icon" />
             <span>Mon to Sat Open: 9am - 6pm</span>
           </div>
 
-          {/* Social Icons */}
+          {}
           <div className="social-icons">
             <a href="#" className="social-icon">
               <Twitter size={16} />
@@ -62,10 +62,10 @@ const SharedNavbar = () => {
         </div>
       </div>
 
-      {/* 🔹 Main Navbar */}
+      {}
       <div className="main-navbar">
         <div className="main-navbar-container">
-          {/* Logo */}
+          {}
           <a
             href="/"
             className="logo-link"
@@ -73,7 +73,7 @@ const SharedNavbar = () => {
             <span className="logo-text">Edusion</span>
           </a>
 
-          {/* Desktop Navigation */}
+          {}
           <div className="desktop-nav">
             <ul className="nav-list">
               {navItems.map((item) => (
@@ -94,7 +94,7 @@ const SharedNavbar = () => {
             </div>
           </div>
 
-          {/* Mobile Menu Button */}
+          {}
           <div className="mobile-menu-btn-container">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -126,7 +126,7 @@ const SharedNavbar = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {}
         {isOpen && (
           <div className="mobile-menu">
             <ul className="mobile-nav-list">

@@ -26,7 +26,7 @@ import '../src/style/PricingSection.css';
 import PricingSection from './components/PricingSection';
 import '../src/style/Newsletter.css';
 import Newsletter from './components/Newsletter';
-
+import './App.css'
 import '../src/style/BlogSection.css';
 import BlogSection from './components/BlogSection';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -35,6 +35,10 @@ import AboutPage from './AboutPage';
 
 import '../src/style/NewPageHero.css';
 import NewPageHero from './components/NewPageHero';
+
+import '../src/style/CourseHeroSection.css';
+
+
 
 
 
@@ -55,6 +59,8 @@ import NewPageHero from './components/NewPageHero';
 
 import { BookOpen, Award, Users, Search, MessageCircleQuestion, Lightbulb, GraduationCap, Star, Headset, Briefcase, BarChart, Code, DollarSign, Microscope, FlaskConical, Palette, Atom, Smile, FileText, Trophy, Play, CheckCircle, Send, X, Phone, Mail, Clock } from 'lucide-react';
 import CourseCategories from './components/CourseCategories';
+import CourseHeroSection from './components/CourseHeroSection';
+
 const API_KEY = ""; 
 const CourseCard = ({ course }) => {
   const [summary, setSummary] = useState('');
@@ -86,8 +92,8 @@ const CourseCard = ({ course }) => {
         });
 
         if (!response.ok) {
-          if (response.status === 429) { // Too Many Requests
-            const delay = baseDelay * Math.pow(2, retries) + Math.random() * 1000; // Exponential backoff with jitter
+          if (response.status === 429) {
+            const delay = baseDelay * Math.pow(2, retries) + Math.random() * 1000; 
             console.warn(`Rate limit hit. Retrying in ${delay / 1000}s...`);
             await new Promise(resolve => setTimeout(resolve, delay));
             retries++;
@@ -103,16 +109,16 @@ const CourseCard = ({ course }) => {
         if (candidate && candidate.content?.parts?.[0]?.text) {
           const generatedText = candidate.content.parts[0].text;
           setSummary(generatedText);
-          setShowSummaryModal(true); // Show modal on successful summary
-          break; // Exit retry loop
+          setShowSummaryModal(true);
+          break; 
         } else {
           setSummary('Could not generate summary. Please try again.');
-          break; // Exit retry loop
+          break;
         }
       } catch (error) {
         console.error("Error fetching AI summary:", error);
         setSummary('Failed to generate summary due to an error.');
-        break; // Exit retry loop on unrecoverable error
+        break; 
       } finally {
         setLoadingSummary(false);
       }
@@ -143,16 +149,16 @@ const App = () => {
             }}
         >
             <BrowserRouter>
-                {/* These components will appear on every page */}
+                {}
                 <TopHeaderBar />
                 <SharedNavbar />
 
-                {/* The content of the pages will be rendered here based on the URL */}
+                {}
                 <Routes>
                     <Route 
                         path="/" 
                         element={
-                            // This is your home page content
+                          
                             <>
                                 <HeroSection />
                                 <AboutSection/>
@@ -170,8 +176,10 @@ const App = () => {
                             </>
                         } 
                     />
-                    {/* The About Us page content */}
+                    {}
                     <Route path="/about" element={<AboutPage />} />
+                    <Route path="/courses" element={<CourseHeroSection/>} />
+
                 </Routes>
                 
                 <Footer />

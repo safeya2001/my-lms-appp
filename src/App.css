@@ -16,7 +16,21 @@ body {
     background-image: url('https://wpdemothemes.com/edusion/wp-content/uploads/2023/10/home2.png');
 }
 
-
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+:root {
+  --main-h2-font-size: 1.5em;
+  --main-h2-margin: 0.83em 0;
+  --main-h2-font-weight: bold;
+}
 
 .App-logo {
   height: 40vmin;

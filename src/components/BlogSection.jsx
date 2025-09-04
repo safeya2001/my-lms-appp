@@ -33,11 +33,11 @@ const blogPosts = [
 ];
 
 const BlogSection = () => {
-    // تحديد البطاقة الأولى للعمود الأول
+   
     const firstPost = blogPosts[0];
-    // تحديد البطاقة الثانية للعمود الثاني
+    
     const secondPost = blogPosts[1];
-    // تحديد البطاقات النصية للعمود الثالث
+
     const textPosts = blogPosts.slice(2, 4);
 
     return (
@@ -48,7 +48,7 @@ const BlogSection = () => {
                     <h2>Our Latest <span><u>Blogs</u></span></h2>
                 </div>
                 <div className="row blog-grid-container">
-                    {/* Column 1: Card with image */}
+                    {}
                     <div className="col-lg-4 col-md-6 mb-4">
                         <div className="single_blog with-image">
                             <img src={firstPost.image} alt={firstPost.title} />
@@ -66,7 +66,7 @@ const BlogSection = () => {
                         </div>
                     </div>
 
-                    {/* Column 2: Card with image */}
+                    {}
                     <div className="col-lg-4 col-md-6 mb-4">
                         <div className="single_blog with-image">
                             <img src={secondPost.image} alt={secondPost.title} />
@@ -84,7 +84,7 @@ const BlogSection = () => {
                         </div>
                     </div>
 
-                    {/* Column 3: Two cards without images, stacked */}
+                    {}
                     <div className="col-lg-4 col-md-12">
                         <div className="blog-column-vertical">
                             {textPosts.map((post, index) => (

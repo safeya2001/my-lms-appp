@@ -23,3 +23,15 @@
     font-size: 24px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+.faq-title {
+  font-size: var(--main-h2-font-size);
+  margin: var(--main-h2-margin);
+  font-weight: var(--main-h2-font-weight);
+  color: #1a2d62;
+}
+
+.team-title {
+  font-size: var(--main-h2-font-size);
+  font-weight: var(--main-h2-font-weight);
+  color: #54595F;
+}

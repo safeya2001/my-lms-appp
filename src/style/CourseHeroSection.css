@@ -1,0 +1,55 @@
+.section-top {
+    padding-top: 200px;
+    padding-bottom: 120px;
+    background-image: url('https://wpdemothemes.com/edusion/wp-content/uploads/2023/10/section-bg-2.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.section-top .container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section-top .col-lg-10 {
+    max-width: 83.33333%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-top-title h1 {
+    font-size: 48px; 
+    color: #1a2d62;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section-top-title ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    color: #1a2d62;
+    font-weight: 500;
+}
+
+.section-top-title ul li {
+    margin: 0 5px;
+}
+
+.section-top-title ul li a {
+    color:#2eca7f;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.section-top-title ul li a:hover {
+    color: #2eca7f;
+}
+
+
+

@@ -1,19 +1,15 @@
-/* Main header container */
+
 .top-header-bar {
-  /*
-    * هذه الخاصية تجعل الشريط يلتصق في أعلى الصفحة
-    * z-index: 1001; تُعطيه قيمة أعلى من الشريط الثاني
-    * لكي يظهر فوقه في حال التداخل
-  */
+
   position: sticky;
   top: 0;
   z-index: 1001; 
   background-color: #262626;
-  /* باقي الأنماط كما هي */
+
   height: 54px;
 }
 
-/* Inner container for content */
+
 .top-header-container {
   height: 100%;
   display: flex;
@@ -22,13 +18,13 @@
   padding: 1rem 1rem;
 }
 
-/* Section for the Envato logo */
+
 .envato-section {
   display: flex;
   column-gap: 0.5rem;
 }
 
-/* Styling for the logo image */
+
 .envato-logo {
   display: inline-block;
   position: absolute;
@@ -39,7 +35,7 @@
   background-size: 152px 18px;
 }
 
-/* Styling for the "Buy Now" button */
+
 .buy-now-btn {
   padding: 0.5rem 1rem;
   font-size: 14px;
@@ -53,7 +49,18 @@
   transition-duration: 200ms;
 }
 
-/* Hover effect for the button */
+
 .buy-now-btn:hover {
   background-color: rgba(139, 195, 74, 0.9);
+}.faq-title {
+  font-size: var(--main-h2-font-size);
+  margin: var(--main-h2-margin);
+  font-weight: var(--main-h2-font-weight);
+  color: #1a2d62;
+}
+
+.team-title {
+  font-size: var(--main-h2-font-size);
+  font-weight: var(--main-h2-font-weight);
+  color: #54595F;
 }

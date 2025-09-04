@@ -17,7 +17,7 @@ const AboutSection = () => {
                     </div>
                 </div>
                 <div className="about-cards-row">
-                    {/* Feature 1: Quality Education */}
+                    {}
                     <div className="single_tp">
                         <h3>Quality Education</h3>
                         <p>
@@ -28,7 +28,7 @@ const AboutSection = () => {
                         </a>
                     </div>
 
-                    {/* Feature 2: Experienced Teachers */}
+                    {}
                     <div className="single_tp">
                         <h3>Experienced Teachers</h3>
                         <p>
@@ -39,7 +39,7 @@ const AboutSection = () => {
                         </a>
                     </div>
 
-                    {/* Feature 3: Delicious Food */}
+                    {}
                     <div className="single_tp">
                         <h3>Delicious Food</h3>
                         <p>

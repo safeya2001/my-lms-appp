@@ -47,7 +47,7 @@
     transition: color 0.3s ease;
 }
 
-/* الدائرة الخضراء الفاتحة الشفافة */
+
 .explore-button::before {
     content: '';
     position: absolute;
@@ -56,13 +56,13 @@
     transform: translateY(-50%);
     width: 55px;
     height: 55px;
-    background-color: rgba(54, 221, 140, 0.1); /* تم تغيير اللون إلى RGBA لجعلها شفافة */
+    background-color: rgba(54, 221, 140, 0.1); 
     border-radius: 50%;
     z-index: 0;
     transition: background-color 0.3s ease;
 }
 
-/* النص والأيقونة داخل الزر */
+
 .explore-button span {
     position: relative;
     z-index: 1;
@@ -78,7 +78,7 @@
     transition: margin-left 0.3s ease;
 }
 
-/* تأثير تحويل لون الزر عند تمرير الماوس على البطاقة */
+
 .single_tp:hover .explore-button {
         transform: translateY(-5px);
         max-width: 180px;
@@ -92,7 +92,7 @@
 
 }
 
-/* تأثير تحريك السهم */
+
 .explore-button:hover i {
         transform: translateY(-5px);
     margin-left: 1px;

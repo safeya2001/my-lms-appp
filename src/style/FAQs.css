@@ -1,4 +1,4 @@
-/* FAQ Section */
+
 .faq-section {
   display: flex;
   justify-content: center;
@@ -10,13 +10,12 @@
   margin: 0 auto;
 }
 
-/* Left Content Area */
+
 .faq-content-left {
   flex: 1;
   max-width: 650px;
 }
 
-/* Section Header */
 .faq-subtitle {
   color: #00d084;
   font-size: 14px;
@@ -92,7 +91,7 @@
   color: #00d084;
 }
 
-/* Answer Content */
+
 .faq-answer-container {
   max-height: 0;
   overflow: hidden;
@@ -100,7 +99,7 @@
 }
 
 .faq-item.open .faq-answer-container {
-  max-height: 200px; /* Adjust as needed */
+  max-height: 200px; 
   transition: max-height 0.3s ease-in;
 }
 
@@ -111,7 +110,7 @@
   color: #7A7A7A;
 }
 
-/* Right Image Area */
+
 .faq-image-right {
   display: flex;
   justify-content: center;
@@ -123,7 +122,7 @@
   height: auto;
 }
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 992px) {
   .faq-section {
     flex-direction: column;

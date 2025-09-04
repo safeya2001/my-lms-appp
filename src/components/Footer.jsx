@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="footer section-padding">
       <div className="container">
         <div className="row">
-          {/* About Widget Column */}
+          {}
           <div className="col-lg-4 col-md-6 col-xs-12">
             <div className="single_footer about_widget">
               <a href="#">
@@ -25,10 +25,10 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Links and Contact Info Columns */}
+          {}
           <div className="col-lg-8 col-md-12 col-xs-12">
             <div className="row">
-              {/* Courses Menu */}
+              {}
               <div className="col-lg-4 col-md-4 col-sm-6 col-12">
                 <div className="single_footer">
                   <h4>Courses</h4>
@@ -43,7 +43,7 @@ const Footer = () => {
                 </div>
               </div>
               
-              {/* Company Menu */}
+              {}
               <div className="col-lg-4 col-md-4 col-sm-6 col-12">
                 <div className="single_footer">
                   <h4>Company</h4>
@@ -58,7 +58,7 @@ const Footer = () => {
                 </div>
               </div>
               
-              {/* Contact Info */}
+              {}
               <div className="col-lg-4 col-md-4 col-sm-6 col-12">
                 <div className="single_footer">
                   <h4>Contact Info</h4>
@@ -83,7 +83,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Footer Bottom (Copyright and Menu) */}
+        {}
         <div className="row footer-btm">
           <div className="col-lg-6 col-sm-6 col-xs-12">
             <div className="footer_copyright">

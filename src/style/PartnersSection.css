@@ -1,5 +1,5 @@
 .partners-section {
-  padding: 80px 0; /* يمكنك تعديل المسافة العلوية والسفلية حسب الحاجة */
+  padding: 80px 0;
 }
 
 .partner_title {
@@ -23,10 +23,10 @@
 }
 
 .partners-carousel {
-  display: flex; /* يجعل العناصر في صف واحد */
-  justify-content: center; /* يوزع العناصر بالتساوي في المنتصف */
+  display: flex; 
+  justify-content: center; 
   align-items: center;
-  gap: 20px; /* المسافة بين كل أيقونة وأخرى */
+  gap: 20px; 
   flex-wrap: wrap;
 }
 
@@ -41,4 +41,16 @@
 .partner-item img:hover {
   filter: none;
   opacity: 1;
+}
+.faq-title {
+  font-size: var(--main-h2-font-size);
+  margin: var(--main-h2-margin);
+  font-weight: var(--main-h2-font-weight);
+  color: #1a2d62;
+}
+
+.team-title {
+  font-size: var(--main-h2-font-size);
+  font-weight: var(--main-h2-font-weight);
+  color: #54595F;
 }

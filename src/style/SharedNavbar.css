@@ -1,16 +1,10 @@
-/* Main Nav Container */
 .shared-navbar {
-  /*
-    * هذه الخاصية تجعل شريط التنقل يلتصق أسفل الشريط الأول
-    * top: 54px; هي المسافة التي يلتصق بها (طول الشريط العلوي)
-    * z-index: 1000; قيمة أقل من الشريط الأول
-  */
+
   position: sticky;
   top: 54px;
   z-index: 1000;
 }
 
-/* 🔹 Top Green Bar */
 .top-bar {
   align-items: center;
   background-color: #2eca7f;
@@ -30,7 +24,6 @@
   flex-wrap: wrap;
 }
 
-/* العناصر */
 .top-item {
   display: flex;
   align-items: center;
@@ -42,7 +35,6 @@
   text-decoration: none;
 }
 
-/* أيقونات السوشال ميديا */
 .social-icons {
   display: flex;
   gap: 10px;
@@ -66,7 +58,7 @@
   transform: scale(1.1);
 }
 
-/* Main Navbar Section */
+
 .main-navbar {
   background-color: #ffffff;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -85,7 +77,6 @@
   justify-content: space-between;
 }
 
-/* Logo */
 .logo-link {
   display: flex;
   align-items: center;
@@ -98,7 +89,7 @@
   color: #4a5568;
 }
 
-/* Desktop Navigation */
+
 .desktop-nav {
   display: none;
   align-items: center;
@@ -130,7 +121,7 @@
   color: #4f46e5;
 }
 
-/* Call to Action Buttons */
+
 .cta-buttons {
   display: flex;
   gap: 0.75rem;
@@ -164,7 +155,7 @@
   background-color: #f3f4f6;
 }
 
-/* Mobile Menu Button */
+
 .mobile-menu-btn-container {
   display: block;
 }
@@ -184,7 +175,7 @@
   color: #4f46e5;
 }
 
-/* Mobile Menu */
+
 .mobile-menu-open {
   display: block;
 }
@@ -235,4 +226,16 @@
   border-radius: 9999px;
   transition: background-color 0.2s;
   text-decoration: none;
+}
+.faq-title {
+  font-size: var(--main-h2-font-size);
+  margin: var(--main-h2-margin);
+  font-weight: var(--main-h2-font-weight);
+  color: #1a2d62;
+}
+
+.team-title {
+  font-size: var(--main-h2-font-size);
+  font-weight: var(--main-h2-font-weight);
+  color: #54595F;
 }

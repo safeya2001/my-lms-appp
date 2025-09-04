@@ -76,8 +76,20 @@
     background-color: #1a2d62;
 }
 
-/* For icon, assuming you have font-awesome linked */
+
 .fa-paper-plane-o:before {
     font-family: 'FontAwesome';
     content: '\f1d8';
+}
+.faq-title {
+  font-size: var(--main-h2-font-size);
+  margin: var(--main-h2-margin);
+  font-weight: var(--main-h2-font-weight);
+  color: #1a2d62;
+}
+
+.team-title {
+  font-size: var(--main-h2-font-size);
+  font-weight: var(--main-h2-font-weight);
+  color: #54595F;
 }
