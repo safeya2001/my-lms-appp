@@ -38,28 +38,11 @@ import NewPageHero from './components/NewPageHero';
 
 import '../src/style/CourseHeroSection.css';
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import { BookOpen, Award, Users, Search, MessageCircleQuestion, Lightbulb, GraduationCap, Star, Headset, Briefcase, BarChart, Code, DollarSign, Microscope, FlaskConical, Palette, Atom, Smile, FileText, Trophy, Play, CheckCircle, Send, X, Phone, Mail, Clock } from 'lucide-react';
 import CourseCategories from './components/CourseCategories';
 import CourseHeroSection from './components/CourseHeroSection';
+import Courses from './Courses'
+import ContactUS from './ContactUs';
 
 const API_KEY = ""; 
 const CourseCard = ({ course }) => {
@@ -178,8 +161,8 @@ const App = () => {
                     />
                     {}
                     <Route path="/about" element={<AboutPage />} />
-                    <Route path="/courses" element={<CourseHeroSection/>} />
-
+                    <Route path="/courses" element={<Courses/>} />
+                    <Route path="/contact" element={<ContactUS/>} />
                 </Routes>
                 
                 <Footer />

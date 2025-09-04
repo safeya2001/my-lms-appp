@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #1a2c5a;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-header {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.contact-item {
+    flex: 1;
+    padding: 0 20px;
+    text-align: center;
+    border-right: 1px solid #e0e0e0;
+}
+
+.contact-item:last-child {
+    border-right: none;
+}
+
+.contact-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact-item p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #888;
+}
+
+.submit-button {
+    width: auto;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: #2eca7f;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #27ae60;
+}
+
+.contact-item img {
+    width: 42px;
+    height: auto;
+    color: #2eca7f;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.main-heading {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: #1a2c5a;
+}
+
+.contact-form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #1a2c5a;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.full-width {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .contact-header {
+        flex-direction: column;
+    }
+    .contact-item {
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .contact-item:last-child {
+        border-bottom: none;
+    }
+    .form-row {
+        flex-direction: column;
+    }
+}
