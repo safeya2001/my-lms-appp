@@ -4,8 +4,7 @@
     font-size: 48px;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 20px;
-    padding-bottom: 50px;
+
     padding-top: 50px;
 }
 
@@ -15,7 +14,7 @@
     font-weight: 600;
     text-transform: uppercase;
     display: block;
-    margin-bottom: 10px;
+
     position: relative;
     padding-left: 60px;
 }

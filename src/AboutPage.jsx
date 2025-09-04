@@ -26,13 +26,16 @@ import '../src/style/CoursePromo.css';
 import CoursePromo from './components/CoursePromo';
 import '../src/style/PricingSection.css';
 import PricingSection from './components/PricingSection';
-import '../src/style/Newsletter.css';
+import '../src/style/WhyChooseUs.css';
 import Newsletter from './components/Newsletter';
-
+import '../src/style/TeamMembers.css';
 import '../src/style/NewPageHero.css';
 import NewPageHero from './components/NewPageHero';
 import '../src/style/AboutHeroSection.css';
 import AboutHeroSection from './components/AboutHeroSection';
+import WhyChooseUs from './components/WhyChooseUs';
+import TeamMembers from './components/TeamMembers';
+import FAQs from './components/FAQs';
 const AboutPage = () => {
     return (
         <div className="about-page">
@@ -40,6 +43,11 @@ const AboutPage = () => {
             <AboutHeroSection />
          <AboutSection/>
          <NewPageHero/>
+         <WhyChooseUs/>
+             <AchievementCounter/>
+<TeamMembers/>
+<FAQs/>
+             <PartnersSection/>
            
         </div>
     );
