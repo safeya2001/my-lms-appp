@@ -7,7 +7,7 @@ const navItems = [
     { name: "Home", href: "/" },
     { name: "Pages", href: "/about", hasDropdown: true },
     { name: "Courses", href: "/courses", hasDropdown: true },
-    { name: "Blog", href: "/blog", hasDropdown: true },
+    { name: "Blog", href: "/#", hasDropdown: true },
     { name: "Contact", href: "/contact" },
 ];
 
