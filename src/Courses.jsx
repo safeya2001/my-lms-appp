@@ -36,12 +36,13 @@ import '../src/style/TeamMembers.css';
 import '../src/style/NewPageHero.css';
 import '../src/style/AboutHeroSection.css';
 import CourseHeroSection from '../src/components/CourseHeroSection';
+import SharedNav from './components/SharedNav';
 
 
 const Courses= () => {
     return (
         <div className="courses">
-            
+             <SharedNav/>
             <CourseHeroSection/>
         <PopularCourses/>
             <PartnersSection/>

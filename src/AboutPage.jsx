@@ -36,10 +36,11 @@ import AboutHeroSection from './components/AboutHeroSection';
 import WhyChooseUs from './components/WhyChooseUs';
 import TeamMembers from './components/TeamMembers';
 import FAQs from './components/FAQs';
+import SharedNav from './components/SharedNav';
 const AboutPage = () => {
     return (
         <div className="about-page">
-            
+            <SharedNav/>
             <AboutHeroSection />
          <AboutSection/>
          <NewPageHero/>

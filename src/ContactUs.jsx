@@ -38,9 +38,11 @@ import TeamMembers from './components/TeamMembers';
 import FAQs from './components/FAQs';
 import ContactUsHero from './components/ContactUsHero'
 import ContactPage from './components/ContactPage'
+import SharedNav from './components/SharedNav';
 const ContactUS = () => {
     return (
         <div className="about-page">
+            <SharedNav/>
          <ContactUsHero/>
            <ContactPage/>
            

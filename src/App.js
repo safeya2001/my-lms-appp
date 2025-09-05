@@ -134,7 +134,7 @@ const App = () => {
             <BrowserRouter>
                 {}
                 <TopHeaderBar />
-                <SharedNavbar />
+         
 
                 {}
                 <Routes>
