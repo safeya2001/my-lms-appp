@@ -143,6 +143,7 @@ const App = () => {
                         element={
                           
                             <>
+                            <SharedNavbar/>
                                 <HeroSection />
                                 <AboutSection/>
                                 <CourseCategories/>
